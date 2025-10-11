@@ -15,4 +15,4 @@ S3 (static website) → CloudFront (CDN) → User 🌍
 
 
 ## Live Demo
-👉 [View Portfolio](www.ayushranjan.me)
+👉www.ayushranjan.me
