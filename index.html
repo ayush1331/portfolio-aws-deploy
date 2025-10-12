@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ayush Ranjan | DevOps Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ayush Ranjan — DevOps & Cloud</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Navbar -->
-  <header>
-    <nav class="navbar">
+  <!-- NAV -->
+  <header class="navbar">
+    <div class="nav-left">
       <div class="logo">Ayush Ranjan</div>
+    </div>
+
+    <nav>
       <ul class="nav-links" id="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -18,84 +21,118 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <div class="hamburger" id="hamburger">☰</div>
     </nav>
+
+    <div class="nav-right">
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌗</button>
+      <a class="btn outline" id="resume-btn" href="assets/Ayush_Ranjan_Resume.pdf" download>Download Resume</a>
+      <button id="hamburger" class="hamburger" aria-label="Open menu">☰</button>
+    </div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <div class="hero-text">
-        <h1>Hi, I'm <span>Ayush Ranjan</span></h1>
-        <h2>Aspiring DevOps Engineer</h2>
-        <p>Passionate about Cloud, AWS, DevOps, and Automation.</p>
-        <a href="#projects" class="btn">View My Work</a>
-      </div>
-      <div class="hero-photo">
-        <img src="image/profile.png" alt="Ayush Ranjan" />
-      </div>
-    </div>
-  </section>
+  <!-- HERO -->
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <h1>Hi, I'm <span>Ayush Ranjan</span></h1>
+          <h2>Aspiring DevOps & Cloud Engineer</h2>
+          <p>Building scalable infrastructure and automation workflows with <strong>AWS, Docker, Terraform</strong>, and CI/CD. I focus on practical projects that solve real problems.</p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn">View My Work</a>
+            <a href="mailto:ranjanayush612@gmail.com" class="btn outline">Hire / Contact</a>
+          </div>
+        </div>
 
-  <!-- About -->
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>
-      I am passionate about Cloud, AWS, DevOps, and Automation. Currently pursuing a BCA in Cloud Computing. 
-      I enjoy building real-world DevOps projects using AWS, Docker, Kubernetes, and Terraform.
-    </p>
-  </section>
+        <div class="hero-photo-wrap">
+          <div class="hero-photo">
+            <img src="image/profile.png" alt="Ayush Ranjan" />
+          </div>
 
-  <!-- Skills -->
-  <section id="skills" class="skills">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div>AWS Cloud</div>
-      <div>Docker</div>
-      <div>Kubernetes</div>
-      <div>Terraform</div>
-      <div>CI/CD</div>
-      <div>Linux</div>
-      <div>Git</div>
-      <div>Python</div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>DevOps Pipeline</h3>
-        <p>End-to-end CI/CD pipeline with Docker, GitHub Actions, and AWS ECS.</p>
-        <a href="#">GitHub</a> | <a href="#">Live Demo</a>
+          <!-- CLEAN inline tags under photo (replaced the vertical list) -->
+          <div class="hero-tags" aria-hidden="false">
+            <span class="tag">DevOps · Cloud</span>
+            <span class="tag">5+ Projects</span>
+            <span class="tag">AWS</span>
+            <span class="tag">CI/CD</span>
+            <span class="tag">Automation</span>
+          </div>
+        </div>
       </div>
-      <div class="project-card">
-        <h3>AWS Infrastructure with Terraform</h3>
-        <p>Automated provisioning of EC2, S3, and VPC using Terraform IaC.</p>
-        <a href="#">GitHub</a>
-      </div>
-      <div class="project-card">
-        <h3>Monitoring Setup</h3>
-        <p>CloudWatch and Grafana dashboards for application health tracking.</p>
-        <a href="#">GitHub</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:ranjanayush612@gmail.com">ranjanayush612@gmail.com</a></p>
-    <p>
-      <a href="https://github.com/yourgithub" target="_blank">GitHub</a> | 
-      <a href="https://linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a>
-    </p>
-  </section>
+    <!-- ABOUT -->
+    <section id="about" class="card about">
+      <h2>About Me</h2>
+      <p>I’m a BCA Cloud Computing student focused on DevOps and infrastructure automation. I build cloud-native solutions using Terraform, Docker, Kubernetes, and AWS services. My goal is to ship reliable, maintainable systems and learn continuously through real projects and collaboration.</p>
+    </section>
 
-  <!-- Footer -->
+    <!-- SKILLS -->
+    <section id="skills" class="card skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill"><strong>AWS</strong><small>EC2 · S3 · IAM · CloudWatch</small></div>
+        <div class="skill"><strong>Docker</strong><small>Images · Containers</small></div>
+        <div class="skill"><strong>Kubernetes</strong><small>Deployments · Services</small></div>
+        <div class="skill"><strong>Terraform</strong><small>IaC · Modules</small></div>
+        <div class="skill"><strong>CI/CD</strong><small>GitHub Actions · Jenkins</small></div>
+        <div class="skill"><strong>Linux</strong><small>Shell · Sysadmin</small></div>
+        <div class="skill"><strong>Git</strong><small>Version Control</small></div>
+        <div class="skill"><strong>Python</strong><small>Automation</small></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="card projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>CipherGate</h3>
+          <p>Personal authentication vault focused on local encryption, simple UX and secure storage practices.</p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+            <a href="#" target="_blank" rel="noopener">Live</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>AI-Driven Agri Solution (SIH)</h3>
+          <p>POC using Vertis AI + Gemini APIs to deliver crop, soil and weather recommendations to small farmers.</p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>DevOps CI/CD Pipeline</h3>
+          <p>End-to-end pipeline using Docker and GitHub Actions; deploys containers or static sites to AWS.</p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+            <a href="#" target="_blank" rel="noopener">Demo</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>AWS Infra with Terraform</h3>
+          <p>Reusable Terraform modules to provision VPC, EC2, S3 and IAM with version-controlled IaC.</p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="card contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:ranjanayush612@gmail.com">ranjanayush612@gmail.com</a></p>
+      <p><a href="https://github.com/ayushranjan" target="_blank" rel="noopener">GitHub</a> | <a href="https://linkedin.com/in/ayushranjan" target="_blank" rel="noopener">LinkedIn</a></p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
   <footer>
-    <p>© 2025 Ayush Ranjan | DevOps Portfolio</p>
+    <p>© <span id="year"></span> Ayush Ranjan — DevOps & Cloud</p>
   </footer>
 
   <script src="script.js"></script>
