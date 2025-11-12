@@ -1,6 +1,6 @@
 /* =========================
-   RESET & VARIABLES
-   ========================= */
+  RESET & VARIABLES
+  ========================= */
 * {
   margin: 0;
   padding: 0;
@@ -9,32 +9,32 @@
 
 :root {
   /* Brand accents (fixed colors) */
-  --accent: #00bcd4;
-  --accent2: #f4c542;
-  --gradient: linear-gradient(90deg, var(--accent), #2196f3);
+  --accent: #9f55ff;  /* Bright Violet */
+  --accent2: #ff79c6; /* Bright Pink */
+  --gradient: linear-gradient(90deg, var(--accent), var(--accent2));
 
   /* Default dark theme */
-  --bg: #0d1117;
-  --card: #15181c;
-  --text: #e6edf3;
-  --muted: #8b949e;
+  --bg: #191622;        /* Dark Purple-Black */
+  --card: #201c2d;      /* Dark Purple Card */
+  --text: #f8f8f2;      /* Off-white */
+  --muted: #a9a1d6;      /* Light Purple-Grey */
   --glass: rgba(255, 255, 255, 0.03);
-  --navbar-bg: rgba(13, 17, 23, 0.9);
+  --navbar-bg: rgba(25, 22, 34, 0.9);
 }
 
 /* Light theme overrides */
 body.light {
-  --bg: #f6f8fb;
+  --bg: #f7f5ff;        /* Light Lavender */
   --card: #ffffff;
-  --text: #0b1a2b;
-  --muted: #475569;
-  --glass: rgba(11, 26, 43, 0.04);
+  --text: #191622;      /* Dark Purple-Black */
+  --muted: #5a5375;      /* Muted Purple */
+  --glass: rgba(25, 22, 34, 0.04);
   --navbar-bg: rgba(255, 255, 255, 0.95);
 }
 
 /* =========================
-   BASE STYLES
-   ========================= */
+  BASE STYLES
+  ========================= */
 body {
   font-family: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial;
   background: var(--bg);
@@ -46,8 +46,8 @@ body {
 }
 
 /* =========================
-   NAVBAR
-   ========================= */
+  NAVBAR
+  ========================= */
 .navbar {
   display: flex;
   align-items: center;
@@ -144,8 +144,8 @@ body {
 }
 
 /* =========================
-   HERO SECTION
-   ========================= */
+  HERO SECTION
+  ========================= */
 .hero {
   min-height: 88vh;
   display: flex;
@@ -212,7 +212,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 5px solid rgba(0, 188, 212, 0.15);
+  border: 5px solid rgba(159, 85, 255, 0.15); /* Updated border color */
   box-shadow: 0 20px 50px rgba(2, 6, 23, 0.6);
   background: var(--card);
   transition: transform 0.35s;
@@ -256,8 +256,8 @@ body {
 }
 
 /* =========================
-   SECTION & CARDS
-   ========================= */
+  SECTION & CARDS
+  ========================= */
 section {
   padding: 60px 20px;
   max-width: 1000px;
@@ -334,8 +334,8 @@ h2 {
 
 .project-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(0, 188, 212, 0.2);
-  border: 1px solid rgba(0, 188, 212, 0.3);
+  box-shadow: 0 10px 25px rgba(159, 85, 255, 0.2); /* Updated shadow color */
+  border: 1px solid rgba(159, 85, 255, 0.3); /* Updated border color */
 }
 
 .project-card h3 {
@@ -384,8 +384,8 @@ footer {
 }
 
 /* =========================
-   RESPONSIVE
-   ========================= */
+  RESPONSIVE
+  ========================= */
 @media (max-width: 900px) {
   .hero-inner {
     gap: 20px;
